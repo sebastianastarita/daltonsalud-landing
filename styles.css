@@ -244,6 +244,12 @@ h2 {
   background: var(--color-light-gray);
 }
 
+#servicios,
+#envios,
+#ubicacion {
+  scroll-margin-top: 132px;
+}
+
 .service-card {
   color: var(--color-carbon);
   font-weight: 400;
