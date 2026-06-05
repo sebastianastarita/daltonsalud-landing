@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" role="img" aria-labelledby="title desc">
+  <title id="title">DALTON Salud y Bienestar</title>
+  <desc id="desc">Logotipo horizontal de DALTON Salud y Bienestar.</desc>
+  <rect width="520" height="160" fill="#FFFFFF"/>
+  <g transform="translate(24 24)">
+    <rect x="0" y="0" width="112" height="112" rx="18" fill="#28A2A5"/>
+    <path d="M30 80V32h27c16 0 27 10 27 24s-11 24-27 24H30Zm18-16h9c6 0 10-3 10-8s-4-8-10-8h-9v16Z" fill="#FFFFFF"/>
+    <text x="142" y="62" fill="#002D3A" font-family="Montserrat, Arial, sans-serif" font-size="48" font-weight="800">DALTON</text>
+    <text x="145" y="96" fill="#28A2A5" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600">Salud y Bienestar</text>
+  </g>
+</svg>
