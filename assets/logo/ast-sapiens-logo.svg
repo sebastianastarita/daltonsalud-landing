@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="420" height="90" viewBox="0 0 420 90" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <clipPath id="cL"><rect x="0" y="0" width="33" height="90"/></clipPath>
+    <clipPath id="cR"><rect x="33" y="0" width="40" height="90"/></clipPath>
+  </defs>
+
+  <!-- ISOTIPO -->
+  <g transform="translate(14, 9)">
+
+    <!-- Lado izquierdo: Azul Carbón -->
+    <g clip-path="url(#cL)">
+      <g stroke="#002D3A" stroke-width="1.6" fill="none" opacity="0.9">
+        <path stroke-dasharray="3,3" d="M33,4 L57,17.5 L57,44.5 L33,58 L9,44.5 L9,17.5 Z"/>
+        <line x1="33" y1="4"    x2="33" y2="31"/>
+        <line x1="57" y1="17.5" x2="33" y2="31"/>
+        <line x1="57" y1="44.5" x2="33" y2="31"/>
+        <line x1="33" y1="58"   x2="33" y2="31"/>
+        <line x1="9"  y1="44.5" x2="33" y2="31"/>
+        <line x1="9"  y1="17.5" x2="33" y2="31"/>
+        <circle cx="33" cy="4"    r="3"   fill="#002D3A"/>
+        <circle cx="9"  cy="44.5" r="3"   fill="#002D3A"/>
+        <circle cx="9"  cy="17.5" r="3"   fill="#002D3A"/>
+        <circle cx="33" cy="58"   r="1.5" fill="#002D3A" opacity="0.4"/>
+        <circle cx="57" cy="17.5" r="1.5" fill="#002D3A" opacity="0.2"/>
+        <circle cx="57" cy="44.5" r="1.5" fill="#002D3A" opacity="0.2"/>
+      </g>
+    </g>
+
+    <!-- Lado derecho: Turquesa -->
+    <g clip-path="url(#cR)">
+      <g stroke="#28A2A5" stroke-width="1.6" fill="none" opacity="0.9">
+        <path stroke-dasharray="3,3" d="M33,4 L57,17.5 L57,44.5 L33,58 L9,44.5 L9,17.5 Z"/>
+        <line x1="33" y1="4"    x2="33" y2="31"/>
+        <line x1="57" y1="17.5" x2="33" y2="31"/>
+        <line x1="57" y1="44.5" x2="33" y2="31"/>
+        <line x1="33" y1="58"   x2="33" y2="31"/>
+        <line x1="9"  y1="44.5" x2="33" y2="31"/>
+        <line x1="9"  y1="17.5" x2="33" y2="31"/>
+        <circle cx="57" cy="17.5" r="3"   fill="#28A2A5"/>
+        <circle cx="57" cy="44.5" r="3"   fill="#28A2A5"/>
+        <circle cx="33" cy="58"   r="3"   fill="#28A2A5"/>
+        <circle cx="33" cy="4"    r="1.5" fill="#28A2A5" opacity="0.3"/>
+        <circle cx="9"  cy="17.5" r="1.5" fill="#28A2A5" opacity="0.2"/>
+        <circle cx="9"  cy="44.5" r="1.5" fill="#28A2A5" opacity="0.2"/>
+      </g>
+    </g>
+
+    <!-- Vórtice teal -->
+    <g stroke="#28A2A5" stroke-width="1.1" fill="none" opacity="0.65">
+      <path d="M33,31 Q38,21 44,27 T57,31"/>
+      <path d="M33,31 Q28,21 22,27 T9,31"/>
+      <path d="M33,31 Q38,41 44,35 T57,31"/>
+      <path d="M33,31 Q28,41 22,35 T9,31"/>
+      <circle cx="46" cy="23" r="1.2" fill="#28A2A5"/>
+      <circle cx="52" cy="40" r="1.4" fill="#28A2A5"/>
+      <circle cx="20" cy="40" r="1.2" fill="#28A2A5"/>
+      <circle cx="14" cy="23" r="1.4" fill="#28A2A5"/>
+    </g>
+
+    <!-- Núcleo -->
+    <circle cx="33" cy="31" r="5.5" fill="#28A2A5"/>
+    <circle cx="33" cy="31" r="9.5" fill="none" stroke="#28A2A5" stroke-width="0.8" opacity="0.35"/>
+
+  </g>
+
+  <!-- TIPOGRAFÍA -->
+  <!-- AST Sapiens: x=90 -->
+  <text x="90" y="51"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="600" fill="#002D3A">AST Sapiens</text>
+
+  <!-- Punto separador: x=225 -->
+  <circle cx="225" cy="46" r="3" fill="#28A2A5"/>
+
+  <!-- "Cop": x=235 -->
+  <text x="235" y="51"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="400" fill="#28A2A5">Cop</text>
+
+  <!-- "ia" superíndice: x=279, y=44 -->
+  <text x="279" y="44"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#002D3A">ia</text>
+
+  <!-- "& Lógica": x=299, y=51 -->
+  <text x="299" y="51"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="400" fill="#28A2A5">&amp; Lógica</text>
+
+</svg>
