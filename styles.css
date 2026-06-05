@@ -48,7 +48,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 16px clamp(18px, 5vw, 64px);
+  padding: 14px clamp(18px, 5vw, 64px);
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--color-border);
   backdrop-filter: blur(14px);
@@ -59,7 +59,7 @@ a {
 }
 
 .brand img {
-  width: 164px;
+  width: 218px;
 }
 
 .nav {
@@ -67,7 +67,7 @@ a {
   align-items: center;
   gap: 22px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .button {
@@ -81,7 +81,7 @@ a {
   border: 2px solid var(--color-turquoise);
   border-radius: 8px;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
@@ -139,7 +139,7 @@ a {
   color: var(--color-turquoise);
   font-family: var(--font-heading);
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -148,6 +148,7 @@ h2 {
   margin: 0;
   color: var(--color-carbon);
   font-family: var(--font-heading);
+  font-weight: 500;
   line-height: 1.12;
 }
 
@@ -165,7 +166,7 @@ h2 {
   margin: 18px 0 0;
   color: var(--color-carbon);
   font-size: clamp(1.15rem, 3vw, 1.55rem);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .hero-text {
@@ -188,9 +189,10 @@ h2 {
   place-items: center;
   padding: 22px;
   overflow: hidden;
-  background: var(--color-carbon);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(154, 163, 171, 0.32);
   border-radius: 8px;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 14px 36px rgba(0, 45, 58, 0.08);
 }
 
 .hero-visual img {
@@ -231,7 +233,7 @@ h2 {
   margin-bottom: 8px;
   color: var(--color-carbon);
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .info-item p {
@@ -244,7 +246,7 @@ h2 {
 
 .service-card {
   color: var(--color-carbon);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .help-section {
@@ -282,26 +284,35 @@ h2 {
   align-content: center;
   gap: 10px;
   padding: 26px;
-  color: var(--color-white);
-  background: linear-gradient(135deg, var(--color-carbon), #064959);
+  color: var(--color-carbon);
+  background: var(--color-light-gray);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
 .map-panel span {
   color: var(--color-turquoise);
   font-family: var(--font-heading);
-  font-size: 2.4rem;
-  font-weight: 800;
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+  font-weight: 500;
 }
 
 .map-panel strong {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.map-panel small {
+  color: #36545B;
+  font-size: 1.05rem;
 }
 
 .notice {
   color: var(--color-white);
   background: var(--color-carbon);
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .notice h2 {
@@ -311,8 +322,8 @@ h2 {
 
 .site-footer {
   display: grid;
-  gap: 22px;
-  padding: 38px clamp(18px, 5vw, 32px);
+  gap: 16px;
+  padding: 28px clamp(18px, 5vw, 32px);
   color: var(--color-white);
   background: #001F28;
 }
@@ -322,6 +333,7 @@ h2 {
   margin-bottom: 8px;
   font-family: var(--font-heading);
   font-size: 1.15rem;
+  font-weight: 500;
 }
 
 .site-footer p {
@@ -330,7 +342,7 @@ h2 {
 
 .site-footer a {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   color: var(--color-white);
 }
 
@@ -360,7 +372,7 @@ h2 {
   }
 
   .brand img {
-    width: 208px;
+    width: 300px;
   }
 
   .hero {
@@ -368,7 +380,7 @@ h2 {
     align-items: center;
     min-height: min(580px, calc(100vh - 122px));
     padding-top: 54px;
-    padding-bottom: 42px;
+    padding-bottom: 30px;
   }
 
   .hero-copy,
@@ -382,12 +394,12 @@ h2 {
   }
 
   .hero-visual {
-    min-height: 430px;
+    min-height: 330px;
     justify-self: start;
   }
 
   .hero-visual img {
-    width: min(280px, 74vw);
+    width: min(220px, 50vw);
   }
 
   .service-grid {
@@ -418,7 +430,7 @@ h2 {
   }
 
   .brand img {
-    width: 134px;
+    width: 168px;
   }
 
   .button-small {
