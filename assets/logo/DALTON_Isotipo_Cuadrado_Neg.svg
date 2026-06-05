@@ -1,5 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
-  <title id="title">Isotipo DALTON negro</title>
-  <rect width="320" height="320" rx="48" fill="#002D3A"/>
-  <path d="M92 222V98h70c42 0 72 26 72 62s-30 62-72 62H92Zm47-41h23c16 0 27-8 27-21s-11-21-27-21h-23v42Z" fill="#FFFFFF"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  viewBox="0 0 1000 1000" width="1000" height="1000">
+<!--
+  DALTON — ISOTIPO CUADRADO NEG — fondo azul carbón, isotipo turquesa
+  Canvas:         1000 × 1000
+  Radio esquinas: 220 (22.0% del canvas)
+  Isotipo disp:   600 × 613u (60% canvas)
+  Margen horiz:   200u (20%)  Margen vert: ~193u (19.3%)
+  Fondo:          #002D3A  Isotipo: #28A2A5
+-->
+<defs>
+  <clipPath id="rounded">
+    <rect width="1000" height="1000" rx="220" ry="220"/>
+  </clipPath>
+</defs>
+<g clip-path="url(#rounded)">
+  <rect width="1000" height="1000" fill="#002D3A"/>
+  <g transform="translate(116.35, 168.88) scale(4.6656)">
+    <path fill="#28A2A5" d="M 111.23 6.00 L 111.23 48.90 L 112.05 49.71 L 145.95 49.71 L 146.53 50.34 Q 146.02 57.70 140.69 62.72 C 136.05 67.11 130.71 68.62 123.95 68.35 Q 118.62 68.13 111.56 68.15 L 111.11 68.60 Q 111.21 87.06 109.53 105.27 C 103.71 125.17 86.43 137.42 65.74 136.70 Q 51.72 136.21 40.75 127.63 C 18.09 109.90 17.93 74.85 41.40 57.65 Q 52.76 49.32 68.48 49.66 Q 83.99 49.99 88.78 49.90 L 89.67 50.77 L 89.67 67.36 L 88.90 68.14 Q 79.97 68.23 66.50 68.15 C 55.04 68.08 44.28 77.08 42.88 88.52 Q 41.05 103.52 52.08 112.30 Q 59.45 118.17 68.72 117.67 C 74.85 117.34 80.31 115.79 84.71 111.31 Q 90.55 105.35 92.01 98.27 L 92.39 28.75 C 92.39 25.74 92.36 22.66 93.02 20.00 Q 96.24 7.01 110.37 5.24 L 111.23 6.00 Z"/>
+  </g>
+</g>
 </svg>
