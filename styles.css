@@ -209,14 +209,12 @@ h2 {
   margin-bottom: 28px;
 }
 
-.info-grid,
-.service-grid {
+.info-grid {
   display: grid;
   gap: 14px;
 }
 
-.info-item,
-.service-card {
+.info-item {
   min-height: 112px;
   padding: 20px;
   background: var(--color-white);
@@ -263,21 +261,63 @@ h2 {
   background: var(--color-light-gray);
 }
 
+.help-section {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
 #servicios,
 #envios,
 #contacto {
   scroll-margin-top: 132px;
 }
 
-.service-card {
-  color: var(--color-carbon);
-  font-weight: 400;
+.services-editorial-list {
+  display: grid;
+  gap: 0;
+  padding: 4px 18px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(0, 45, 58, 0.06);
 }
 
-.help-section {
-  display: grid;
-  gap: 24px;
-  align-items: center;
+.service-editorial-item {
+  position: relative;
+  padding: 13px 0 13px 16px;
+  border-bottom: 1px solid rgba(154, 163, 171, 0.26);
+}
+
+.service-editorial-item:last-child {
+  border-bottom: 0;
+}
+
+.service-editorial-item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 0;
+  width: 2px;
+  background: var(--color-turquoise);
+  border-radius: 999px;
+}
+
+.service-editorial-item h3 {
+  margin: 0;
+  color: var(--color-carbon);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.service-editorial-item p {
+  margin: 3px 0 0;
+  color: rgba(0, 45, 58, 0.62);
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .help-copy p:last-child,
@@ -372,9 +412,6 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .service-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 880px) {
@@ -413,8 +450,14 @@ h2 {
     width: min(220px, 50vw);
   }
 
-  .service-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .services-editorial-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 34px;
+    padding: 10px 28px;
+  }
+
+  .service-editorial-item:nth-last-child(2) {
+    border-bottom: 0;
   }
 
   .help-section,
