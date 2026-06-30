@@ -512,8 +512,95 @@ h2 {
     width: 168px;
   }
 
-  .button-small {
-    min-height: 40px;
-    padding-inline: 10px;
+.button-small {
+  min-height: 40px;
+  padding-inline: 10px;
   }
 }
+
+.recruitment-page .site-header {
+  position: relative;
+}
+
+.button-muted {
+  min-height: 42px;
+  padding: 8px 14px;
+  border-color: var(--color-carbon);
+  background: var(--color-white);
+  color: var(--color-carbon);
+}
+
+.button-muted:hover,
+.button-muted:focus-visible {
+  color: var(--color-white);
+  background: var(--color-carbon);
+}
+
+.recruitment-hero {
+  background: linear-gradient(135deg, rgba(40, 162, 165, 0.06), rgba(242, 244, 246, 0.92) 52%, rgba(255, 255, 255, 1)), var(--color-light-gray);
+  min-height: 0;
+}
+
+.recruitment-summary .recruitment-text,
+.recruitment-contact .recruitment-text {
+  margin: 0;
+  color: #36545B;
+  max-width: 860px;
+}
+
+.recruitment-jobs {
+  display: grid;
+  gap: 14px;
+}
+
+.recruitment-job-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.job-open,
+.job-empty {
+  display: grid;
+  gap: 10px;
+}
+
+.job-open h3 {
+  margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.3;
+}
+
+.job-open p,
+.job-empty p {
+  margin: 0;
+  color: #36545B;
+}
+
+.job-empty {
+  display: none;
+}
+
+.recruitment-apply {
+  margin-top: 8px;
+  justify-self: start;
+}
+
+.recruitment-note {
+  margin-top: 6px;
+  color: var(--color-medium-gray) !important;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.recruitment-contact a {
+  color: var(--color-carbon);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.footer-recruit-link {
+  margin: 0;
+}
+
