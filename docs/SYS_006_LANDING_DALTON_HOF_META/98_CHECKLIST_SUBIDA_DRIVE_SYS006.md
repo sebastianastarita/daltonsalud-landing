@@ -17,7 +17,11 @@ Cerrar y subir la documentación técnica de SYS-006 con control de calidad y tr
   - `06_FILA_INDICE_MAESTRO_SYS006.md`
   - `98_CHECKLIST_SUBIDA_DRIVE_SYS006.md`
 - [ ] Opcional: crear Google Doc consolidado con `99_EXPORT_CONSOLIDADO_DRIVE_SYS006.md`.
+- [ ] Reemplazar en Drive los `.md` actualizados tras cambios de cierre.
+- [ ] Verificar que `03_CAMBIOS_Y_COMMITS_SYS006.md` incluya `99f4fa0` y `cdbb65f`.
+- [ ] Verificar que `99_EXPORT_CONSOLIDADO_DRIVE_SYS006.md` esté regenerado y actualizado.
 - [ ] Actualizar el Sheet maestro con la fila de `06_FILA_INDICE_MAESTRO_SYS006.md`.
+- [ ] Verificar que el índice maestro no requiere una nueva fila: se mantiene la fila ya cargada de SYS-006.
 - [ ] Pegar la URL de la carpeta documental en el índice maestro.
 - [ ] Verificar que no se hayan subido contraseñas, tokens ni secretos.
 - [ ] Verificar vínculo entre repositorio GitHub y carpeta Drive (referencia cruzada de trazabilidad).

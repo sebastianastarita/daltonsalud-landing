@@ -15,6 +15,11 @@ Implementar y consolidar una landing institucional estática para `daltonsalud.c
 
 - Landing institucional principal con secciones funcionales de servicios, envíos y contacto.
 - Reemplazo de assets provisorios por branding oficial.
+- Integración de foto institucional real de fachada en el hero principal.
+- Assets de imagen institucional:
+  - `/assets/img/farmacia-dalton-frente.webp`
+  - `/assets/img/farmacia-dalton-frente-small.webp`
+  - `/assets/img/og-dalton-frente.jpg`
 - Canonicalización y redirección de dominio canónico.
 - SEO técnico inicial (metadatos, robots, sitemap, schema.org).
 - Página institucional de reclutamiento en `/trabaja-con-nosotros/`.
@@ -75,3 +80,4 @@ Implementar y consolidar una landing institucional estática para `daltonsalud.c
 3. Revisar periódicamente `sitemap.xml` cuando se agreguen nuevas rutas.
 4. Mantener validación mensual de canonical, redirecciones y links funcionales críticos.
 5. Coordinar con RRHH para que el bloque de reclutamiento refleje estado real.
+6. Pendiente eventual: reemplazar la foto del hero si hay producciÃ³n fotogrÃ¡fica profesional futura; no bloquea el cierre actual.

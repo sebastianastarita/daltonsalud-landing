@@ -16,6 +16,8 @@
 | `57107c9` | Add recruitment page | ImplementaciÃ³n subpÃ¡gina `/trabaja-con-nosotros/` | Canal pÃºblico de reclutamiento y vÃ­nculo desde home |
 | 60fc8c9 | Fix recruitment postulaciÃ³n text | Corrección textual de acentuación | Ajuste redacción y calidad editorial |
 | `8a31974` | Add technical documentation for landing system | Creación de documentación técnica de cierre SYS-006 | Deja preparado el paquete documental para Drive e índice maestro |
+| `99f4fa0` | Add Dalton storefront photo to hero | Integración de foto real de fachada en el hero principal | Reemplaza isotipo provisorio por imagen institucional del local y actualiza Open Graph |
+| `cdbb65f` | Fix hero storefront photo sizing | Corrección de estilos para que la foto ocupe correctamente el bloque visual del hero | Evita renderizado tipo thumbnail y consolida imagen real como pieza principal del hero |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 

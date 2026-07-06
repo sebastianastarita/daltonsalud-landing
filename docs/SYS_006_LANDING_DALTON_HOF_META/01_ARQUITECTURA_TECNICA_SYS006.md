@@ -47,6 +47,24 @@ Sistema estático de una sola página (SPA-like por navegación interna anclada)
 - Favicons oficiales en `/assets/icons`.
 - Sin cambios de identidad visual en implementaciones siguientes sin aprobación de marca.
 
+## Assets de imagen institucional
+
+- `/assets/img/farmacia-dalton-frente.webp`
+- `/assets/img/farmacia-dalton-frente-small.webp`
+- `/assets/img/og-dalton-frente.jpg`
+
+Uso:
+
+- Hero principal (desktop y mobile con `picture`/`srcset`).
+- Open Graph y Twitter Card.
+
+Criterio técnico:
+
+- Imagen principal en formato WebP para rendimiento en hero.
+- JPG para Open Graph/social.
+- `object-fit: cover` aplicado en el bloque hero.
+- Alt text: `Fachada de Farmacia Dalton en La Plata`.
+
 ## Relación con Meta / WhatsApp API
 
 - WhatsApp expuesto vía enlace `wa.me` en UI.
