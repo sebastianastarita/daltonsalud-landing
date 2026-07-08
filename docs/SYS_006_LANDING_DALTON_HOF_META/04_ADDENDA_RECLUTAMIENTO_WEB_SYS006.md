@@ -8,57 +8,49 @@
 
 ## Contexto operativo
 
-Esta subpágina actúa como punto de entrada para candidatos y no reemplaza el sistema operativo real de selección.
+Esta subpágina actúa como punto de entrada para candidatos y no reemplaza el sistema operativo real de selección (SYS-005).
 
 Correo de contacto de selección: `seleccion@daltonsalud.com`
 
-## Formulario oficial
+## Estado desde SYS-006 hotfix 2026-07-08 — sin búsqueda abierta
 
-- **Form actual:**  
-  `https://docs.google.com/forms/d/e/1FAIpQLSdYsME55V4Z8c_cSxz17qzcIPWIINuciJ94qD3AVC_Dv_3fRQ/viewform?usp=header`
+La convocatoria `BUS-REEMPLAZO-2026-001` (`Auxiliar / atención al público en farmacia`) fue cerrada operativamente en SYS-005 (Apps Script). Esta subpágina fue actualizada en consecuencia:
 
-## Búsqueda abierta actual
+- Se eliminó el bloque `.job-open` (puesto, sector, horario, condición relevante, ubicación, botón `Postularme`, nota de formulario oficial).
+- Se eliminó toda referencia al Form activo (`docs.google.com/forms/.../1FAIpQLSdYsME55V4Z8c_cSxz17qzcIPWIINuciJ94qD3AVC_Dv_3fRQ`). Ese Form ya no está enlazado desde esta página.
+- El bloque `.job-empty` (único bloque restante en `#busquedas`) ahora muestra el título "Registro para futuras búsquedas" y un botón que abre el **Registro Futuro** de SYS-005:
+  `https://script.google.com/a/macros/daltonsalud.com/s/AKfycbzVhvZx99p8IjCdgd_eXdWK-gxQB4FrtFCXoWN_sEilutIXREALpOwyjUSzgCEMc5ZpOA/exec?view=registroFuturo`
+- El botón principal del hero ("Ver búsqueda abierta") fue reemplazado por "Dejar mis datos", con el mismo destino de Registro Futuro.
+- El botón "Escribir a selección" (`mailto:seleccion@daltonsalud.com`) se mantuvo sin cambios — nunca apuntó al Form activo.
 
-- `Auxiliar / atención al público en farmacia`
+## Registro Futuro (SYS-005) — nuevo destino canónico
 
-## Reemplazo del link del Form
+- **URL:** `https://script.google.com/a/macros/daltonsalud.com/s/AKfycbzVhvZx99p8IjCdgd_eXdWK-gxQB4FrtFCXoWN_sEilutIXREALpOwyjUSzgCEMc5ZpOA/exec?view=registroFuturo`
+- **Atributos del link:** `target="_blank"` `rel="noopener noreferrer"` (verificado en ambos botones).
+- Este destino pertenece al sistema SYS-005 (repo `dalton-rrhh-seleccion-candidatos`), no a SYS-006. No modificar su contenido desde este repositorio.
+
+## Si en el futuro se abre una nueva búsqueda
 
 1. Editar `trabaja-con-nosotros/index.html`.
-2. En botón `Postularme`, actualizar el `href`.
-3. Verificar atributos:
-   - `target="_blank"`
-   - `rel="noopener noreferrer"`
-4. Guardar y publicar.
-
-## Ocultar búsqueda activa y mostrar estado sin búsquedas
-
-La plantilla incluye ambos bloques en la sección `#busquedas`:
-
-- `.job-open` (búsqueda activa)
-- `.job-empty` (sin búsquedas abiertas)
-
-### Procedimiento
-
-1. Para ocultar búsqueda activa: establecer `.job-open` como no visible y mostrar `.job-empty`.
-2. Confirmar que solo uno de los bloques quede visible.
-3. Actualizar texto de contacto a `seleccion@daltonsalud.com` si aplica.
-
-Comentario incluido en el HTML:
-`Para cerrar la búsqueda activa, ocultar el bloque .job-open y mostrar el bloque .job-empty`
+2. Reintroducir un bloque `.job-open` con los datos de la nueva vacante (puesto, sector, horario, condición relevante, ubicación) y un botón de postulación al canal oficial vigente en ese momento.
+3. Verificar atributos `target="_blank"` y `rel="noopener noreferrer"` en el botón de postulación.
+4. Decidir si el bloque de Registro Futuro se mantiene visible en paralelo o se retira mientras haya búsqueda activa.
+5. Guardar y publicar.
 
 ## Reglas de mantenimiento
 
 - Mantener texto de alcance institucional y evitar ofertas de beneficios no confirmados.
-- Mantener `postulación` y `selección` en redacción institucional clara.
-- Revisar que el enlace de postulación siempre sea el formulario oficial vigente.
-- Verificar apertura del botón en nueva pestaña.
+- No decir "Banco de CV" (no se pide CV en el registro futuro).
+- No prometer contacto garantizado.
+- No indicar que hay búsqueda abierta mientras no la haya.
+- Verificar apertura de los botones en nueva pestaña.
 - Mantener coherencia visual con la home.
 
 ## Riesgo de desactualización
 
-- Riesgo principal: link del Form o datos de la vacante desactualizados en ausencia de rutina de mantenimiento.
-- Riesgo de UX: bloque `.job-open` visible cuando no hay vacante.
-- Mitigación: rutina semanal de revisión por RRHH.
+- Riesgo principal: reabrir una búsqueda y olvidar actualizar esta página, dejando el mensaje "sin búsquedas abiertas" desactualizado.
+- Riesgo de UX: mostrar simultáneamente un bloque de búsqueda activa y el bloque de registro futuro sin criterio claro.
+- Mitigación: rutina de revisión por RRHH al abrir o cerrar cada búsqueda.
 
 ## Responsable funcional
 
