@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-07-28
 
-**Estado:** Candidato no productivo
+**Estado:** GO PROD autorizado; ejecución productiva en curso
 
 **Sistema:** SYS-006 — Landing DALTON Salud y Bienestar
 
@@ -15,6 +15,22 @@
 **Revisión:** PR borrador `#1`
 
 **Preview de rama:** `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
+
+## Autorización productiva
+
+**GO PROD SYS-006 Links recibido:** 2026-07-28 19:41 ART
+
+Alcance autorizado:
+
+- fusionar el PR `#1` en `main`;
+- desplegar `/links/` en `daltonsalud.com`;
+- crear y activar los alias `302` de WhatsApp vigente, Facebook y Google Maps;
+- validar y documentar producción.
+
+Fuera de alcance:
+
+- activar el número futuro de WhatsApp;
+- modificar la bio de Instagram.
 
 ## Decisión
 

@@ -4,9 +4,9 @@
 
 **Tipo:** Fast-track MVP
 
-**Estado:** Implementación no productiva
+**Estado:** GO PROD autorizado; ejecución en curso
 
-**Autorización recibida:** GO para construir y documentar; GO PROD todavía no emitido
+**Autorización recibida:** `GO PROD SYS-006 Links`, 2026-07-28 19:41 ART
 
 ## Objetivo
 
@@ -45,7 +45,7 @@ Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y pun
 - [x] Documentación mínima portable.
 - [x] Preview de Cloudflare validado.
 - [ ] Reglas `302` creadas y verificadas.
-- [ ] GO PROD registrado.
+- [x] GO PROD registrado.
 - [ ] Bio de Instagram migrada.
 - [ ] Herramienta anterior retirada después del período de observación.
 

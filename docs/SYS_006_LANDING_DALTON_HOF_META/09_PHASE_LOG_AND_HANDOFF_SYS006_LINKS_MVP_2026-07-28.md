@@ -4,7 +4,14 @@
 
 **Fase:** Construcción del MVP
 
-**Estado de salida:** Candidato para revisión; no productivo
+**Estado de salida:** GO PROD autorizado; ejecución productiva en curso
+
+## Autorización GO PROD
+
+- Texto recibido: `GO PROD SYS-006 Links`
+- Fecha y hora: 2026-07-28 19:41 ART
+- Incluye: merge de PR `#1`, despliegue de `/links/`, tres alias `302`, validación y documentación.
+- Excluye: número futuro de WhatsApp y cambio de bio de Instagram.
 
 ## Control de versión
 
