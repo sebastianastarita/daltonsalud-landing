@@ -19,6 +19,11 @@
 | `99f4fa0` | Add Dalton storefront photo to hero | Integración de foto real de fachada en el hero principal | Reemplaza isotipo provisorio por imagen institucional del local y actualiza Open Graph |
 | `cdbb65f` | Fix hero storefront photo sizing | Corrección de estilos para que la foto ocupe correctamente el bloque visual del hero | Evita renderizado tipo thumbnail y consolida imagen real como pieza principal del hero |
 | `dee2290` | fix(sys006): close recruiting page and link future registration | Cierre visual de la búsqueda activa `BUS-REEMPLAZO-2026-001` en `/trabaja-con-nosotros/`, tras su cierre operativo en SYS-005 | Elimina el bloque `.job-open` y el link al Form activo; hero y sección `#busquedas` apuntan ahora al Registro Futuro de SYS-005 (`?view=registroFuturo`, `target="_blank"`) |
+| `8e9ccc5` | feat(sys006): add institutional links hub MVP | Implementación fast-track de `/links/`, alias estables `/go/<destino>` y documentación portable | Prepara el reemplazo del link-in-bio y desacopla la interfaz del número de WhatsApp; candidato no productivo |
+| `3605070` | refine(sys006): improve links hub branding | Ampliación del logo Dalton, crédito AST Sapiens y aclaración de Google Maps | Mejora visual mobile-first solicitada durante la revisión del MVP |
+| `77ffe01` | refine(sys006): remove unattributed marketplaces | Retiro de Farmaonline y GPSFarma del micrositio y de la configuración productiva pendiente | Evita derivar tráfico a marketplaces genéricos sin atribución verificable a Dalton; el MVP queda con tres destinos |
+| `ebe6d4d` | refine(sys006): adopt approved mobile bento layout | Implementación de la composición bento aprobada y del eslogan “Cerca cuando importa” | Prioriza WhatsApp, compacta ubicación/Facebook y permite mostrar el contenido completo en viewports móviles habituales |
+| `7de73d1` | docs(sys006): record GO PROD authorization | Registro de la autorización productiva explícita y de su alcance | Habilita merge, despliegue, tres alias y validación; excluye número futuro e Instagram |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 
