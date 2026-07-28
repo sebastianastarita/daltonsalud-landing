@@ -32,7 +32,8 @@ La solución reutiliza la landing estática publicada en Cloudflare Pages y agre
 
 - Página `/links/` con tres destinos: WhatsApp, Facebook y ubicación.
 - Sustitución de los enlaces directos de WhatsApp de la home y de `/trabaja-con-nosotros/` por `/go/whatsapp`.
-- Identidad visual reutilizada del sitio institucional.
+- Diseño mobile-first tipo bento: WhatsApp como acción principal y ubicación/Facebook como tarjetas secundarias.
+- Identidad visual reutilizada del sitio institucional y eslogan vigente en redes: “Cerca cuando importa”.
 - Sin analytics, cookies, formularios, panel administrativo ni datos personales.
 
 ## Decisión comercial sobre marketplaces

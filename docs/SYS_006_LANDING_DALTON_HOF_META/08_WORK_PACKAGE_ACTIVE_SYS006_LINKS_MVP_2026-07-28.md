@@ -39,6 +39,7 @@ Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y pun
 
 - [x] Página estática `/links/`.
 - [x] Tres alias internos en la interfaz.
+- [x] Composición bento mobile-first y eslogan “Cerca cuando importa”.
 - [x] Enlaces de WhatsApp existentes migrados al alias estable.
 - [x] Número futuro y mensaje prearmado documentados sin activarlos.
 - [x] Documentación mínima portable.
@@ -52,6 +53,8 @@ Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y pun
 
 - La página responde correctamente en mobile y desktop.
 - Muestra exactamente tres accesos.
+- Prioriza visualmente WhatsApp y mantiene ubicación/Facebook como acciones secundarias equivalentes.
+- Muestra el eslogan aprobado debajo del logotipo Dalton.
 - No contiene un número de WhatsApp directo en el HTML.
 - Todos los botones usan `/go/<destino>`.
 - Los tres alias responden con `302` al destino esperado.

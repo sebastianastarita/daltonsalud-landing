@@ -31,6 +31,9 @@
 - Revisión visual posterior: logo Dalton a `360 px` en desktop y `317 px` en viewport móvil, sin desborde horizontal.
 - Crédito AST Sapiens visible y ambos SVG cargados sin errores.
 - Consola del navegador sin errores ni advertencias después de las mejoras.
+- Bento final a `390 × 844`: todo el contenido entra en un viewport, sin scroll ni desborde horizontal.
+- Pantalla compacta a `360 × 740`: composición completa, eslogan visible y tarjetas secundarias iguales de `156 × 126 px`.
+- Desktop a `1440 × 900`: WhatsApp a `560 px`, tarjetas secundarias de `274 px` y logo Dalton a `360 px`.
 
 La navegación final de los alias queda pendiente porque depende de las reglas productivas de Cloudflare, todavía fuera de alcance.
 
@@ -40,6 +43,8 @@ La navegación final de los alias queda pendiente porque depende de las reglas p
 - Se reutilizaron tipografías, colores, logos y estilos de SYS-006.
 - Se amplió un 50 % el ancho objetivo del logotipo Dalton, de `240 px` a `360 px`.
 - Se agregó al pie el crédito “Desarrollado por” con el SVG de AST Sapiens ya versionado en SYS-006 y contrastado con el activo oficial disponible en Drive.
+- Se implementó la composición bento aprobada: WhatsApp a ancho completo y ubicación/Facebook en dos tarjetas secundarias.
+- Se incorporó debajo del logotipo el eslogan vigente en redes: “Cerca cuando importa”.
 - El botón “Ubicación” explicita que abre Google Maps; su alias mantiene como destino `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7`.
 - Farmaonline y GPSFarma se retiraron por decisión comercial: los enlaces genéricos no garantizan atribución a Dalton.
 - Todos los botones del micrositio apuntan a alias `/go/<destino>`.
