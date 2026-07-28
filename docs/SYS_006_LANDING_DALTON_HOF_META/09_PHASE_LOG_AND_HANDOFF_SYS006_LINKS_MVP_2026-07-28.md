@@ -6,6 +6,11 @@
 
 **Estado de salida:** Candidato para revisión; no productivo
 
+## Control de versión
+
+- Rama: `agent/sys006-links-mvp`
+- Commit de implementación: `8e9ccc5`
+
 ## Evidencias de validación no productiva
 
 - Render mobile probado a `390 × 844`: cinco botones visibles, sin desplazamiento horizontal.

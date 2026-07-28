@@ -19,6 +19,7 @@
 | `99f4fa0` | Add Dalton storefront photo to hero | Integración de foto real de fachada en el hero principal | Reemplaza isotipo provisorio por imagen institucional del local y actualiza Open Graph |
 | `cdbb65f` | Fix hero storefront photo sizing | Corrección de estilos para que la foto ocupe correctamente el bloque visual del hero | Evita renderizado tipo thumbnail y consolida imagen real como pieza principal del hero |
 | `dee2290` | fix(sys006): close recruiting page and link future registration | Cierre visual de la búsqueda activa `BUS-REEMPLAZO-2026-001` en `/trabaja-con-nosotros/`, tras su cierre operativo en SYS-005 | Elimina el bloque `.job-open` y el link al Form activo; hero y sección `#busquedas` apuntan ahora al Registro Futuro de SYS-005 (`?view=registroFuturo`, `target="_blank"`) |
+| `8e9ccc5` | feat(sys006): add institutional links hub MVP | Implementación fast-track de `/links/`, alias estables `/go/<destino>` y documentación portable | Prepara el reemplazo del link-in-bio y desacopla la interfaz del número de WhatsApp; candidato no productivo |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 
