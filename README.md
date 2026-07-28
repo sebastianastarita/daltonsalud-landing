@@ -11,16 +11,18 @@ Landing institucional estática para DALTON Salud y Bienestar, preparada para pu
 - `/assets/img/`: carpeta preparada para fotos reales u Open Graph.
 - `/README.md`: guía de mantenimiento.
 
-## Dónde cambiar WhatsApp
+## Gestión de WhatsApp
 
-En `index.html`, buscar `wa.me/5492216767506`. Cambiar ese número o el texto precargado en todos los enlaces de WhatsApp.
-
-WhatsApp actual:
+Todos los accesos públicos del repositorio deben apuntar al alias estable:
 
 ```text
-+54 9 221 676 7506
-https://wa.me/5492216767506?text=Hola,%20quiero%20hacer%20una%20consulta%20a%20Dalton%20Salud
+https://daltonsalud.com/go/whatsapp
 ```
+
+El número real no se publica en el código. El destino se administra mediante una
+regla de redirección temporal `302` en Cloudflare, bajo autorización productiva.
+Esto permite cambiar de número sin volver a modificar la landing, el micrositio
+de enlaces ni otras piezas que utilicen el alias.
 
 ## Dónde cambiar horarios
 
@@ -38,7 +40,7 @@ Domingos: cerrado
 
 En `index.html`, los enlaces principales están comentados al inicio del `<body>`.
 
-- WhatsApp: enlaces con clase `js-whatsapp-link`.
+- WhatsApp: alias interno `/go/whatsapp`.
 - Google Maps: enlaces con clase `js-map-link`.
 - Instagram: `https://www.instagram.com/farmaciadalton/`.
 - Facebook: `https://www.facebook.com/FarmaciaDalton`.
@@ -67,6 +69,15 @@ Configuración recomendada:
 - Rama de producción: `main`.
 
 Cada push a `main` dispara un despliegue automático. Cuando el despliegue termina, la URL técnica `daltonsalud-landing.pages.dev` debe mostrar la landing.
+
+Las ramas distintas de `main` son no productivas y deben validarse en preview
+antes de cualquier GO PROD.
+
+## Micrositio de enlaces
+
+La ruta `/links/` contiene el hub institucional para Instagram y otros canales.
+Sus botones apuntan exclusivamente a alias internos `/go/<destino>`; los
+destinos externos se administran en Cloudflare y no se duplican en el HTML.
 
 ## Nota sobre identidad
 
