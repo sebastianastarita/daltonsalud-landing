@@ -4,7 +4,7 @@
 
 **Tipo:** Fast-track MVP
 
-**Estado:** GO PROD autorizado; ejecución en curso
+**Estado:** DONE — producción activa y validada
 
 **Autorización recibida:** `GO PROD SYS-006 Links`, 2026-07-28 19:41 ART
 
@@ -44,9 +44,9 @@ Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y pun
 - [x] Número futuro y mensaje prearmado documentados sin activarlos.
 - [x] Documentación mínima portable.
 - [x] Preview de Cloudflare validado.
-- [ ] Reglas `302` creadas y verificadas.
+- [x] Reglas `302` creadas y verificadas.
 - [x] GO PROD registrado.
-- [ ] Bio de Instagram migrada.
+- [ ] Bio de Instagram migrada — fuera del alcance de este GO PROD.
 - [ ] Herramienta anterior retirada después del período de observación.
 
 ## Criterios de aceptación
@@ -89,3 +89,14 @@ Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y pun
 2. Deshabilitar las tres reglas nuevas de Cloudflare.
 3. Revertir el despliegue de Pages a la versión productiva previa.
 4. Verificar home, WhatsApp y enlace de bio desde un teléfono.
+
+## Cierre productivo
+
+- PR `#1` fusionado en `main`.
+- Commit productivo: `1f29bdcea232bb1bbcd3df63c8370a8c8c94e43c`.
+- Cloudflare Pages: despliegue productivo exitoso.
+- `/links/`: HTTP `200`, eslogan aprobado y exactamente tres alias.
+- Reglas Cloudflare `SYS-006 WhatsApp`, `SYS-006 Facebook` y `SYS-006 Ubicación`: activas.
+- Los tres alias devolvieron HTTP `302` con el destino exacto esperado.
+- Farmaonline y GPSFarma no están presentes.
+- Número futuro de WhatsApp e Instagram permanecen sin cambios.

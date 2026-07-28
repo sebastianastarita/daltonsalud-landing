@@ -2,19 +2,19 @@
 
 **Fecha:** 2026-07-28
 
-**Estado:** GO PROD autorizado; ejecución productiva en curso
+**Estado:** PROD activo y validado
 
 **Sistema:** SYS-006 — Landing DALTON Salud y Bienestar
 
 **Repositorio:** `sebastianastarita/daltonsalud-landing`
 
-**Rama:** `agent/sys006-links-mvp`
+**Rama productiva:** `main`
 
-**Base verificada:** `4ca2bb8`
+**Commit productivo:** `1f29bdc`
 
-**Revisión:** PR borrador `#1`
+**Revisión:** PR `#1`, fusionado
 
-**Preview de rama:** `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
+**URL productiva:** `https://daltonsalud.com/links/`
 
 ## Autorización productiva
 
@@ -71,12 +71,17 @@ Debmedia no requiere una URL especial: los mensajes ingresan por la API de Whats
 
 ## Destinos externos confirmados
 
-| Alias público | Destino |
-| --- | --- |
-| `/go/whatsapp` | WhatsApp vigente; luego se cambia al destino futuro |
-| `/go/facebook` | `https://www.facebook.com/FarmaciaDalton/` |
-| `/go/ubicacion` | `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7` |
+| Alias público | Estado | Destino validado |
+| --- | --- | --- |
+| `/go/whatsapp` | `302`, activo | `https://wa.me/message/7PZQOH5C4FUDJ1` |
+| `/go/facebook` | `302`, activo | `https://www.facebook.com/FarmaciaDalton/` |
+| `/go/ubicacion` | `302`, activo | `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7` |
 
-## Límites de esta fase
+Validación externa completada el 2026-07-28 entre 19:59 y 20:00 ART.
 
-No se modificaron Cloudflare, DNS, Instagram, Linktree ni producción. Esas acciones requieren un GO PROD explícito y una ventana de validación.
+## Límites vigentes
+
+- No se modificó DNS.
+- No se modificó la bio de Instagram.
+- No se activó el número futuro de WhatsApp.
+- La herramienta anterior debe conservarse durante la observación definida como mecanismo de rollback.
