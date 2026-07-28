@@ -11,6 +11,8 @@
 - Rama: `agent/sys006-links-mvp`
 - Commit de implementación: `8e9ccc5`
 - Commit de handoff inicial: `080bf37`
+- Commit de mejora de marca: `3605070`
+- Commit de recorte comercial: `77ffe01`
 - PR: `#1`, abierto como borrador contra `main`
 - Preview de rama: `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
 
