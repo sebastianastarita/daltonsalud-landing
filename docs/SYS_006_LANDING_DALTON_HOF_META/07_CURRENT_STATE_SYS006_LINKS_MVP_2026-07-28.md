@@ -85,3 +85,13 @@ Validación externa completada el 2026-07-28 entre 19:59 y 20:00 ART.
 - No se modificó la bio de Instagram.
 - No se activó el número futuro de WhatsApp.
 - La herramienta anterior debe conservarse durante la observación definida como mecanismo de rollback.
+
+## Cierre documental institucional
+
+- Carpeta Drive SYS-006: `1HMl3b7CpNcjp1gSnhWoEIMqcwjhhEojO`.
+- CURRENT_STATE: `1HA8YfGPHPlXGemAE_MrXIdlQ4NZ_ffO1`.
+- WORK_PACKAGE: `1733wqDKYPnfDaC1KbdLZuG6qPQJsCfjP`.
+- PHASE_LOG_AND_HANDOFF: `1aXQZHjPv7GyyexpMgjediZ4HuNW-qD0_`.
+- Historial `03_CAMBIOS_Y_COMMITS_SYS006.md` actualizado en el archivo existente `1vkqCSjtH_MQDlqA8jkamrvpHPOREW8wv`.
+- Índice maestro `00_INDICE_MAESTRO_SISTEMAS`, hoja `SISTEMAS`, fila 7: actualizado y verificado.
+- PR documental de cierre: `#2`.

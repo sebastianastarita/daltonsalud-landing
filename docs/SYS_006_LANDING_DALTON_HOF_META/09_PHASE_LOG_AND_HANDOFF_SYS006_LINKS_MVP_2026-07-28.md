@@ -117,5 +117,16 @@ Cuando el nuevo número esté operativo y exista autorización de cambio, modifi
 - [x] Registrar PR, commit productivo, fecha de despliegue y resultado.
 - [x] Dejar constancia de las reglas activas de Cloudflare sin incluir credenciales.
 - [x] Cerrar el work package con estado `DONE`.
-- [ ] Actualizar el estado vigente en Drive y la fila del índice maestro.
+- [x] Actualizar el estado vigente en Drive y la fila `SISTEMAS!7` del índice maestro.
 - [ ] Registrar la fecha efectiva de sustitución del número cuando ocurra.
+
+Archivos institucionales de cierre:
+
+| Documento | ID de Drive |
+| --- | --- |
+| CURRENT_STATE | `1HA8YfGPHPlXGemAE_MrXIdlQ4NZ_ffO1` |
+| WORK_PACKAGE | `1733wqDKYPnfDaC1KbdLZuG6qPQJsCfjP` |
+| PHASE_LOG_AND_HANDOFF | `1aXQZHjPv7GyyexpMgjediZ4HuNW-qD0_` |
+| Historial de cambios | `1vkqCSjtH_MQDlqA8jkamrvpHPOREW8wv` |
+
+La actualización del índice maestro conservó el ID `SYS-006`, el estado `PRODUCCIÓN` y el estado documental `COMPLETO`; actualizó dependencias, contingencia, fechas, próxima revisión y observaciones.
