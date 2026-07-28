@@ -30,10 +30,16 @@ La solución reutiliza la landing estática publicada en Cloudflare Pages y agre
 
 ## Alcance implementado en la rama
 
-- Página `/links/` con cinco destinos: WhatsApp, Facebook, Farmaonline, GPSFarma y ubicación.
+- Página `/links/` con tres destinos: WhatsApp, Facebook y ubicación.
 - Sustitución de los enlaces directos de WhatsApp de la home y de `/trabaja-con-nosotros/` por `/go/whatsapp`.
 - Identidad visual reutilizada del sitio institucional.
 - Sin analytics, cookies, formularios, panel administrativo ni datos personales.
+
+## Decisión comercial sobre marketplaces
+
+Farmaonline y GPSFarma se retiraron del MVP por autorización explícita. Sus enlaces genéricos permiten elegir distintas farmacias y no garantizan que el tráfico, la venta o la atribución comercial queden en Dalton.
+
+Una futura opción “Comprar online” sólo debe habilitarse mediante el alias `/go/comprar` cuando exista un enlace específico o una condición verificable que identifique a Dalton, junto con condiciones económicas, operativas y de medición aprobadas.
 
 ## Estado de WhatsApp
 
@@ -52,8 +58,6 @@ Debmedia no requiere una URL especial: los mensajes ingresan por la API de Whats
 | --- | --- |
 | `/go/whatsapp` | WhatsApp vigente; luego se cambia al destino futuro |
 | `/go/facebook` | `https://www.facebook.com/FarmaciaDalton/` |
-| `/go/farmaonline` | `https://www.farmaonline.com/` |
-| `/go/gpsfarma` | `https://gpsfarma.com/` |
 | `/go/ubicacion` | `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7` |
 
 ## Límites de esta fase

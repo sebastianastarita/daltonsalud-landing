@@ -16,16 +16,16 @@
 
 ## Evidencias de validación no productiva
 
-- Render mobile probado a `390 × 844`: cinco botones visibles, sin desplazamiento horizontal.
-- Render desktop probado a `1440 × 900`: tarjeta de `560 px`, cinco botones visibles.
+- Render mobile probado a `390 × 844`: tres botones visibles, sin desplazamiento horizontal.
+- Render desktop probado a `1440 × 900`: tarjeta de `560 px`, tres botones visibles.
 - Logo y recursos locales cargados sin imágenes rotas.
 - Consola del navegador sin errores ni advertencias.
-- HTML verificado con exactamente cinco alias `/go/<destino>`.
+- HTML verificado con exactamente tres alias `/go/<destino>`.
 - Búsqueda en todos los HTML: sin URL `wa.me` ni números de WhatsApp incrustados.
 - `git diff --check`: aprobado.
 - Cloudflare Pages: despliegue de preview exitoso.
 - Preview remoto: `/links/`, hoja de estilos y logo responden HTTP `200`.
-- Preview remoto: título presente y exactamente cinco alias en el HTML servido.
+- Preview remoto: título presente y exactamente tres alias en el HTML servido.
 - Revisión visual posterior: logo Dalton a `360 px` en desktop y `317 px` en viewport móvil, sin desborde horizontal.
 - Crédito AST Sapiens visible y ambos SVG cargados sin errores.
 - Consola del navegador sin errores ni advertencias después de las mejoras.
@@ -34,11 +34,12 @@ La navegación final de los alias queda pendiente porque depende de las reglas p
 
 ## Trabajo realizado
 
-- Se agregó `/links/` con cinco accesos institucionales.
+- Se agregó `/links/` con tres accesos institucionales.
 - Se reutilizaron tipografías, colores, logos y estilos de SYS-006.
 - Se amplió un 50 % el ancho objetivo del logotipo Dalton, de `240 px` a `360 px`.
 - Se agregó al pie el crédito “Desarrollado por” con el SVG de AST Sapiens ya versionado en SYS-006 y contrastado con el activo oficial disponible en Drive.
 - El botón “Ubicación” explicita que abre Google Maps; su alias mantiene como destino `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7`.
+- Farmaonline y GPSFarma se retiraron por decisión comercial: los enlaces genéricos no garantizan atribución a Dalton.
 - Todos los botones del micrositio apuntan a alias `/go/<destino>`.
 - Los accesos de WhatsApp de la home y de reclutamiento ahora usan `/go/whatsapp`.
 - Se eliminó de la interfaz el número anterior mostrado como texto.
@@ -53,15 +54,13 @@ Se eligió un texto breve y general para no condicionar el enrutamiento ni pedir
 
 ## Configuración productiva pendiente
 
-Crear cinco redirecciones temporales `302` en Cloudflare:
+Crear tres redirecciones temporales `302` en Cloudflare:
 
 | Orden | Ruta de entrada | Destino inicial |
 | --- | --- | --- |
 | 1 | `https://daltonsalud.com/go/whatsapp` | `https://wa.me/message/7PZQOH5C4FUDJ1` |
 | 2 | `https://daltonsalud.com/go/facebook` | `https://www.facebook.com/FarmaciaDalton/` |
-| 3 | `https://daltonsalud.com/go/farmaonline` | `https://www.farmaonline.com/` |
-| 4 | `https://daltonsalud.com/go/gpsfarma` | `https://gpsfarma.com/` |
-| 5 | `https://daltonsalud.com/go/ubicacion` | `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7` |
+| 3 | `https://daltonsalud.com/go/ubicacion` | `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7` |
 
 Cuando el nuevo número esté operativo y exista autorización de cambio, modificar únicamente el destino de `/go/whatsapp` a:
 
@@ -71,7 +70,7 @@ Cuando el nuevo número esté operativo y exista autorización de cambio, modifi
 
 1. Aprobar y fusionar el cambio del repositorio.
 2. Confirmar el despliegue de `/links/` en Cloudflare Pages.
-3. Crear y probar las cinco reglas `302`.
+3. Crear y probar las tres reglas `302`.
 4. Emitir GO PROD y cambiar la bio de Instagram a `https://daltonsalud.com/links/`.
 5. Observar 72 horas conservando la herramienta anterior como rollback.
 6. Recién entonces retirar la herramienta anterior si no hay incidentes.
@@ -79,7 +78,7 @@ Cuando el nuevo número esté operativo y exista autorización de cambio, modifi
 
 ## Verificación exigida antes de producción
 
-- mobile real: carga, legibilidad y apertura de los cinco botones;
+- mobile real: carga, legibilidad y apertura de los tres botones;
 - desktop: carga y disposición visual;
 - respuesta HTTP de cada alias;
 - apertura de WhatsApp con el destino vigente;

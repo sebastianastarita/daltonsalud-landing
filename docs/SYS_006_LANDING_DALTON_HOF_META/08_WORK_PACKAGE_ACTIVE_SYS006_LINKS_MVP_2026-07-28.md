@@ -27,7 +27,7 @@ Reemplazar el enlace de bio de terceros por un punto institucional simple y prep
 
 ### Por qué no Apps Script + Google Sheets
 
-Para cinco enlaces, esa alternativa suma otro runtime, permisos, despliegue y punto de falla. Cloudflare ya forma parte de SYS-006 y permite cambiar el destino de WhatsApp sin modificar ni republicar el sitio.
+Para tres enlaces, esa alternativa suma otro runtime, permisos, despliegue y punto de falla. Cloudflare ya forma parte de SYS-006 y permite cambiar el destino de WhatsApp sin modificar ni republicar el sitio.
 
 ### Fuente de verdad
 
@@ -38,11 +38,11 @@ Para cinco enlaces, esa alternativa suma otro runtime, permisos, despliegue y pu
 ## Entregables
 
 - [x] Página estática `/links/`.
-- [x] Cinco alias internos en la interfaz.
+- [x] Tres alias internos en la interfaz.
 - [x] Enlaces de WhatsApp existentes migrados al alias estable.
 - [x] Número futuro y mensaje prearmado documentados sin activarlos.
 - [x] Documentación mínima portable.
-- [ ] Preview de Cloudflare validado.
+- [x] Preview de Cloudflare validado.
 - [ ] Reglas `302` creadas y verificadas.
 - [ ] GO PROD registrado.
 - [ ] Bio de Instagram migrada.
@@ -51,10 +51,10 @@ Para cinco enlaces, esa alternativa suma otro runtime, permisos, despliegue y pu
 ## Criterios de aceptación
 
 - La página responde correctamente en mobile y desktop.
-- Muestra exactamente cinco accesos.
+- Muestra exactamente tres accesos.
 - No contiene un número de WhatsApp directo en el HTML.
 - Todos los botones usan `/go/<destino>`.
-- Los cinco alias responden con `302` al destino esperado.
+- Los tres alias responden con `302` al destino esperado.
 - `/go/whatsapp` conserva el destino vigente hasta la fecha acordada.
 - El cambio al número futuro puede hacerse modificando una sola regla.
 - Existe rollback probado y no se pierde el enlace anterior durante la transición.
@@ -65,6 +65,7 @@ Para cinco enlaces, esa alternativa suma otro runtime, permisos, despliegue y pu
 - panel de administración;
 - campañas o múltiples perfiles;
 - integración técnica con Debmedia;
+- marketplaces genéricos sin atribución verificable a Dalton;
 - cambios de DNS o nuevo subdominio;
 - automatización del cambio de número.
 
@@ -82,6 +83,6 @@ Para cinco enlaces, esa alternativa suma otro runtime, permisos, despliegue y pu
 ## Rollback
 
 1. Restaurar el enlace de bio anterior.
-2. Deshabilitar las cinco reglas nuevas de Cloudflare.
+2. Deshabilitar las tres reglas nuevas de Cloudflare.
 3. Revertir el despliegue de Pages a la versión productiva previa.
 4. Verificar home, WhatsApp y enlace de bio desde un teléfono.
