@@ -24,6 +24,8 @@
 | `77ffe01` | refine(sys006): remove unattributed marketplaces | Retiro de Farmaonline y GPSFarma del micrositio y de la configuración productiva pendiente | Evita derivar tráfico a marketplaces genéricos sin atribución verificable a Dalton; el MVP queda con tres destinos |
 | `ebe6d4d` | refine(sys006): adopt approved mobile bento layout | Implementación de la composición bento aprobada y del eslogan “Cerca cuando importa” | Prioriza WhatsApp, compacta ubicación/Facebook y permite mostrar el contenido completo en viewports móviles habituales |
 | `7de73d1` | docs(sys006): record GO PROD authorization | Registro de la autorización productiva explícita y de su alcance | Habilita merge, despliegue, tres alias y validación; excluye número futuro e Instagram |
+| `1f29bdc` | Merge SYS-006 institutional links MVP | Fusión del MVP aprobado en `main` | Publica `/links/` y habilita el cierre productivo de los tres alias Cloudflare |
+| `f34cb05` | docs(sys006): close production rollout | Cierre documental de producción | Registra merge, despliegue, reglas 302, validación y límites vigentes |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 

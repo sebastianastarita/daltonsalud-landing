@@ -2,9 +2,9 @@
 
 **Fecha:** 2026-07-28
 
-**Fase:** Construcción del MVP
+**Fase:** Cierre productivo del MVP
 
-**Estado de salida:** GO PROD autorizado; ejecución productiva en curso
+**Estado de salida:** DONE — producción activa y validada
 
 ## Autorización GO PROD
 
@@ -22,8 +22,10 @@
 - Commit de recorte comercial: `77ffe01`
 - Commit de diseño bento y eslogan: `ebe6d4d`
 - Commit de autorización GO PROD: `7de73d1`
-- PR: `#1`, abierto como borrador contra `main`
+- PR: `#1`, fusionado contra `main`
+- Commit de merge productivo: `1f29bdcea232bb1bbcd3df63c8370a8c8c94e43c`
 - Preview de rama: `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
+- URL productiva: `https://daltonsalud.com/links/`
 
 ## Evidencias de validación no productiva
 
@@ -44,7 +46,18 @@
 - Pantalla compacta a `360 × 740`: composición completa, eslogan visible y tarjetas secundarias iguales de `156 × 126 px`.
 - Desktop a `1440 × 900`: WhatsApp a `560 px`, tarjetas secundarias de `274 px` y logo Dalton a `360 px`.
 
-La navegación final de los alias queda pendiente porque depende de las reglas productivas de Cloudflare, todavía fuera de alcance.
+## Evidencias de validación productiva
+
+- Merge de PR `#1`: 2026-07-28 19:42 ART.
+- Cloudflare Pages desplegó correctamente el commit de merge.
+- `/links/` respondió HTTP `200`.
+- El HTML productivo contiene el eslogan aprobado y exactamente tres alias.
+- Farmaonline y GPSFarma no aparecen en la página productiva.
+- `https://daltonsalud.com/go/whatsapp` respondió `302` hacia `https://wa.me/message/7PZQOH5C4FUDJ1`.
+- `https://daltonsalud.com/go/facebook` respondió `302` hacia `https://www.facebook.com/FarmaciaDalton/`.
+- `https://daltonsalud.com/go/ubicacion` respondió `302` hacia `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7`.
+- Las tres reglas constan activas en Cloudflare.
+- Validación externa de alias: 2026-07-28, 19:59–20:00 ART.
 
 ## Trabajo realizado
 
@@ -68,9 +81,9 @@ La navegación final de los alias queda pendiente porque depende de las reglas p
 
 Se eligió un texto breve y general para no condicionar el enrutamiento ni pedir datos sensibles antes de que intervenga el canal de atención.
 
-## Configuración productiva pendiente
+## Configuración productiva activa
 
-Crear tres redirecciones temporales `302` en Cloudflare:
+Se crearon tres redirecciones temporales `302` en Cloudflare:
 
 | Orden | Ruta de entrada | Destino inicial |
 | --- | --- | --- |
@@ -82,15 +95,12 @@ Cuando el nuevo número esté operativo y exista autorización de cambio, modifi
 
 `https://wa.me/5492216562222?text=Hola%2C%20quiero%20hacer%20una%20consulta%20a%20Farmacia%20Dalton.`
 
-## Secuencia recomendada para GO PROD
+## Secuencia posterior al GO PROD
 
-1. Aprobar y fusionar el cambio del repositorio.
-2. Confirmar el despliegue de `/links/` en Cloudflare Pages.
-3. Crear y probar las tres reglas `302`.
-4. Emitir GO PROD y cambiar la bio de Instagram a `https://daltonsalud.com/links/`.
-5. Observar 72 horas conservando la herramienta anterior como rollback.
-6. Recién entonces retirar la herramienta anterior si no hay incidentes.
-7. En la fecha de migración, validar el nuevo número y actualizar sólo `/go/whatsapp`.
+1. Observar 72 horas conservando la herramienta anterior como rollback.
+2. Cambiar la bio de Instagram a `https://daltonsalud.com/links/` sólo con autorización específica.
+3. Retirar la herramienta anterior después de la observación y de la migración de la bio, si no hay incidentes.
+4. En la fecha de migración, validar el nuevo número y actualizar sólo `/go/whatsapp`.
 
 ## Verificación exigida antes de producción
 
@@ -102,12 +112,21 @@ Cuando el nuevo número esté operativo y exista autorización de cambio, modifi
 - ausencia de bucles, errores 404 o exposición del número anterior;
 - registro de fecha, responsable, resultado y eventual rollback.
 
-## Actualizaciones documentales posteriores
+## Actualizaciones documentales de cierre
 
-Al cerrar producción:
+- [x] Registrar PR, commit productivo, fecha de despliegue y resultado.
+- [x] Dejar constancia de las reglas activas de Cloudflare sin incluir credenciales.
+- [x] Cerrar el work package con estado `DONE`.
+- [x] Actualizar el estado vigente en Drive y la fila `SISTEMAS!7` del índice maestro.
+- [ ] Registrar la fecha efectiva de sustitución del número cuando ocurra.
 
-- registrar commit, PR, fecha de despliegue y resultado en el historial de SYS-006;
-- actualizar el estado vigente en Drive y la fila del índice maestro;
-- dejar constancia de las reglas activas de Cloudflare sin incluir credenciales;
-- registrar la fecha efectiva de sustitución del número;
-- cerrar este work package con estado `DONE` o `ROLLED BACK`.
+Archivos institucionales de cierre:
+
+| Documento | ID de Drive |
+| --- | --- |
+| CURRENT_STATE | `1HA8YfGPHPlXGemAE_MrXIdlQ4NZ_ffO1` |
+| WORK_PACKAGE | `1733wqDKYPnfDaC1KbdLZuG6qPQJsCfjP` |
+| PHASE_LOG_AND_HANDOFF | `1aXQZHjPv7GyyexpMgjediZ4HuNW-qD0_` |
+| Historial de cambios | `1vkqCSjtH_MQDlqA8jkamrvpHPOREW8wv` |
+
+La actualización del índice maestro conservó el ID `SYS-006`, el estado `PRODUCCIÓN` y el estado documental `COMPLETO`; actualizó dependencias, contingencia, fechas, próxima revisión y observaciones.
