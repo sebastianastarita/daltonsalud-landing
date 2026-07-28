@@ -13,6 +13,7 @@
 - Commit de handoff inicial: `080bf37`
 - Commit de mejora de marca: `3605070`
 - Commit de recorte comercial: `77ffe01`
+- Commit de diseño bento y eslogan: `ebe6d4d`
 - PR: `#1`, abierto como borrador contra `main`
 - Preview de rama: `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
 

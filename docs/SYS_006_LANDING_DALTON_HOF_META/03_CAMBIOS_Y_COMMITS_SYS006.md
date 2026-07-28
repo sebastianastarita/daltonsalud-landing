@@ -22,6 +22,7 @@
 | `8e9ccc5` | feat(sys006): add institutional links hub MVP | Implementación fast-track de `/links/`, alias estables `/go/<destino>` y documentación portable | Prepara el reemplazo del link-in-bio y desacopla la interfaz del número de WhatsApp; candidato no productivo |
 | `3605070` | refine(sys006): improve links hub branding | Ampliación del logo Dalton, crédito AST Sapiens y aclaración de Google Maps | Mejora visual mobile-first solicitada durante la revisión del MVP |
 | `77ffe01` | refine(sys006): remove unattributed marketplaces | Retiro de Farmaonline y GPSFarma del micrositio y de la configuración productiva pendiente | Evita derivar tráfico a marketplaces genéricos sin atribución verificable a Dalton; el MVP queda con tres destinos |
+| `ebe6d4d` | refine(sys006): adopt approved mobile bento layout | Implementación de la composición bento aprobada y del eslogan “Cerca cuando importa” | Prioriza WhatsApp, compacta ubicación/Facebook y permite mostrar el contenido completo en viewports móviles habituales |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 
