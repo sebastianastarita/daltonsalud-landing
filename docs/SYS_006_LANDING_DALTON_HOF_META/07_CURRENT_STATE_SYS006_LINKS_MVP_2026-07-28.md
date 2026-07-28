@@ -12,6 +12,10 @@
 
 **Base verificada:** `4ca2bb8`
 
+**Revisión:** PR borrador `#1`
+
+**Preview de rama:** `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
+
 ## Decisión
 
 **GO para MVP fast-track sobre SYS-006.**

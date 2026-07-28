@@ -10,6 +10,9 @@
 
 - Rama: `agent/sys006-links-mvp`
 - Commit de implementación: `8e9ccc5`
+- Commit de handoff inicial: `080bf37`
+- PR: `#1`, abierto como borrador contra `main`
+- Preview de rama: `https://agent-sys006-links-mvp.daltonsalud-landing.pages.dev`
 
 ## Evidencias de validación no productiva
 
@@ -20,6 +23,9 @@
 - HTML verificado con exactamente cinco alias `/go/<destino>`.
 - Búsqueda en todos los HTML: sin URL `wa.me` ni números de WhatsApp incrustados.
 - `git diff --check`: aprobado.
+- Cloudflare Pages: despliegue de preview exitoso.
+- Preview remoto: `/links/`, hoja de estilos y logo responden HTTP `200`.
+- Preview remoto: título presente y exactamente cinco alias en el HTML servido.
 
 La navegación final de los alias queda pendiente porque depende de las reglas productivas de Cloudflare, todavía fuera de alcance.
 
