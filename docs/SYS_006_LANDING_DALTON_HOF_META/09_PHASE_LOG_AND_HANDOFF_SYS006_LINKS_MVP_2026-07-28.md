@@ -26,6 +26,9 @@
 - Cloudflare Pages: despliegue de preview exitoso.
 - Preview remoto: `/links/`, hoja de estilos y logo responden HTTP `200`.
 - Preview remoto: título presente y exactamente cinco alias en el HTML servido.
+- Revisión visual posterior: logo Dalton a `360 px` en desktop y `317 px` en viewport móvil, sin desborde horizontal.
+- Crédito AST Sapiens visible y ambos SVG cargados sin errores.
+- Consola del navegador sin errores ni advertencias después de las mejoras.
 
 La navegación final de los alias queda pendiente porque depende de las reglas productivas de Cloudflare, todavía fuera de alcance.
 
@@ -33,6 +36,9 @@ La navegación final de los alias queda pendiente porque depende de las reglas p
 
 - Se agregó `/links/` con cinco accesos institucionales.
 - Se reutilizaron tipografías, colores, logos y estilos de SYS-006.
+- Se amplió un 50 % el ancho objetivo del logotipo Dalton, de `240 px` a `360 px`.
+- Se agregó al pie el crédito “Desarrollado por” con el SVG de AST Sapiens ya versionado en SYS-006 y contrastado con el activo oficial disponible en Drive.
+- El botón “Ubicación” explicita que abre Google Maps; su alias mantiene como destino `https://maps.app.goo.gl/cdVSPpRnP8yJEV7m7`.
 - Todos los botones del micrositio apuntan a alias `/go/<destino>`.
 - Los accesos de WhatsApp de la home y de reclutamiento ahora usan `/go/whatsapp`.
 - Se eliminó de la interfaz el número anterior mostrado como texto.

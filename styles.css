@@ -646,7 +646,7 @@ h2 {
 
 .links-brand {
   display: block;
-  width: min(240px, 72%);
+  width: min(360px, 100%);
   margin: 0 auto 28px;
 }
 
@@ -768,12 +768,11 @@ h2 {
 }
 
 .links-footer {
-  display: flex;
-  gap: 8px;
+  display: grid;
+  gap: 14px;
   justify-content: center;
-  align-items: center;
   min-height: 76px;
-  padding: 18px;
+  padding: 18px 18px 24px;
   color: #36545B;
   font-size: 0.85rem;
   text-align: center;
@@ -781,6 +780,26 @@ h2 {
 
 .links-footer a {
   color: var(--color-carbon);
+}
+
+.links-footer-meta,
+.links-credit {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links-credit {
+  gap: 12px;
+}
+
+.links-credit img {
+  width: min(196px, 55vw);
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
 }
 
 @media (max-width: 420px) {
@@ -795,6 +814,7 @@ h2 {
   }
 
   .links-brand {
+    width: min(360px, 100%);
     margin-bottom: 22px;
   }
 
