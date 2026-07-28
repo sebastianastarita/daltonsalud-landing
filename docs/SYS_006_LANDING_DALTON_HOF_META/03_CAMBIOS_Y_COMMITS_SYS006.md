@@ -23,6 +23,7 @@
 | `3605070` | refine(sys006): improve links hub branding | Ampliación del logo Dalton, crédito AST Sapiens y aclaración de Google Maps | Mejora visual mobile-first solicitada durante la revisión del MVP |
 | `77ffe01` | refine(sys006): remove unattributed marketplaces | Retiro de Farmaonline y GPSFarma del micrositio y de la configuración productiva pendiente | Evita derivar tráfico a marketplaces genéricos sin atribución verificable a Dalton; el MVP queda con tres destinos |
 | `ebe6d4d` | refine(sys006): adopt approved mobile bento layout | Implementación de la composición bento aprobada y del eslogan “Cerca cuando importa” | Prioriza WhatsApp, compacta ubicación/Facebook y permite mostrar el contenido completo en viewports móviles habituales |
+| `7de73d1` | docs(sys006): record GO PROD authorization | Registro de la autorización productiva explícita y de su alcance | Habilita merge, despliegue, tres alias y validación; excluye número futuro e Instagram |
 
 ## Cambios relevantes adicionales en lÃ­nea de continuidad
 
