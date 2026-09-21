@@ -59,7 +59,7 @@
     -->
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="DALTON Salud y Bienestar">
-        <img src="/assets/logo/DALTON_Horizontal_Master.svg" alt="DALTON Salud y Bienestar" width="208" height="64">
+        <img class="brand-logo-static" src="/assets/logo/DALTON_Horizontal_Master.svg" alt="DALTON Salud y Bienestar" width="208" height="64">
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
@@ -71,13 +71,21 @@
       <a class="button button-small js-whatsapp-link" href="/go/whatsapp" target="_blank" rel="noopener">WhatsApp</a>
     </header>
 
+    <div class="brand-intro" aria-hidden="true">
+      <img class="brand-intro-fragment brand-intro-fragment-top" src="/assets/logo/DALTON_Horizontal_Master.svg" alt="">
+      <img class="brand-intro-fragment brand-intro-fragment-middle" src="/assets/logo/DALTON_Horizontal_Master.svg" alt="">
+      <img class="brand-intro-fragment brand-intro-fragment-bottom" src="/assets/logo/DALTON_Horizontal_Master.svg" alt="">
+      <img class="brand-intro-master" src="/assets/logo/DALTON_Horizontal_Master.svg" alt="">
+      <span class="brand-intro-sweep"></span>
+    </div>
+
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">DALTON Salud y Bienestar</p>
-          <h1 id="hero-title">DALTON Salud y Bienestar</h1>
-          <p class="hero-subtitle">Farmacia, perfumería y servicios de salud en La Plata.</p>
-          <p class="hero-text">Atención cercana, productos de salud y bienestar, retiro en local y envíos a domicilio.</p>
+          <p class="eyebrow">Farmacia en La Plata</p>
+          <h1 id="hero-title">Tu salud,<br>más cerca.</h1>
+          <p class="hero-subtitle">Atención profesional con cercanía humana.</p>
+          <p class="hero-text">Farmacia, cuidado personal y bienestar con personas que te conocen y te acompañan.</p>
           <div class="hero-actions" aria-label="Acciones principales">
             <a class="button js-whatsapp-link" href="/go/whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
             <a class="button button-secondary js-map-link" href="https://www.google.com/maps/search/?api=1&query=Calle%201%201400%20esquina%2061%2C%20La%20Plata%2C%20Buenos%20Aires%2C%20Argentina" target="_blank" rel="noopener">Cómo llegar</a>
@@ -90,6 +98,12 @@
             <img src="/assets/img/farmacia-dalton-frente.webp" alt="Fachada de Farmacia Dalton en La Plata">
           </picture>
         </div>
+      </section>
+
+      <section class="hero-proof" aria-label="Propuesta de valor">
+        <p><strong>Atención profesional</strong><span>Consultas farmacéuticas</span></p>
+        <p><strong>Retiro y envíos</strong><span>Coordinación simple por WhatsApp</span></p>
+        <p><strong>En La Plata</strong><span>Calle 1 y 61</span></p>
       </section>
 
       <section class="section-band" id="servicios" aria-labelledby="servicios-title">
@@ -210,5 +224,6 @@
     </footer>
 
     <!-- Insertar Cloudflare Web Analytics aquí cuando esté disponible. -->
+    <script src="/motion.js" defer></script>
   </body>
 </html>
