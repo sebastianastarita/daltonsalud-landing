@@ -19,13 +19,11 @@
 
   if (reduceMotion || (alreadySeen && !forceReplay)) return;
 
-  const fragments = [
-    overlay.querySelector('.brand-intro-fragment-top'),
-    overlay.querySelector('.brand-intro-fragment-middle'),
-    overlay.querySelector('.brand-intro-fragment-bottom')
-  ];
+  const isotype = overlay.querySelector('.brand-intro-isotype');
   const master = overlay.querySelector('.brand-intro-master');
   const sweep = overlay.querySelector('.brand-intro-sweep');
+
+  if (!isotype || !master || !sweep) return;
   const duration = 3000;
   let start = 0;
 
@@ -67,18 +65,10 @@
     const scale = g.startScale + (g.targetScale - g.startScale) * dock;
     overlay.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
 
-    const fragmentStates = [
-      [-72, -38, -10, 2.65],
-      [58, 4, 8, 3.1],
-      [-30, 48, -7, 2.45]
-    ];
-
-    fragments.forEach((fragment, index) => {
-      const [dx, dy, rotation, initialScale] = fragmentStates[index];
-      const fragmentScale = initialScale + (1 - initialScale) * assemble;
-      fragment.style.transform = `translate(${dx * (1 - assemble)}px, ${dy * (1 - assemble)}px) rotate(${rotation * (1 - assemble)}deg) scale(${fragmentScale})`;
-      fragment.style.opacity = String(1 - smooth((p - 0.48) / 0.12));
-    });
+    const initialIsotypeScale = window.innerWidth < 620 ? 1.8 : 1.9;
+    const isotypeScale = 1 + (initialIsotypeScale - 1) * (1 - assemble);
+    isotype.style.transform = `translate(${18 * (1 - assemble)}px, ${-8 * (1 - assemble)}px) scale(${isotypeScale})`;
+    isotype.style.opacity = String(1 - smooth((p - 0.48) / 0.14));
 
     master.style.opacity = String(reveal);
     master.style.clipPath = `inset(0 ${100 * (1 - reveal)}% 0 0)`;
