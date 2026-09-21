@@ -83,7 +83,7 @@ a {
   display: block;
 }
 
-.brand-intro img,
+.brand-intro-master,
 .brand-intro-sweep {
   position: absolute;
   inset: 0;
@@ -91,25 +91,19 @@ a {
   height: 100%;
 }
 
-.brand-intro img {
+.brand-intro-master {
   object-fit: contain;
 }
 
-.brand-intro-fragment {
-  clip-path: inset(0 68% 0 0);
+.brand-intro-isotype {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 23%;
+  height: auto;
+  max-width: none;
+  transform-origin: center;
   will-change: transform, opacity;
-}
-
-.brand-intro-fragment-top {
-  clip-path: inset(0 68% 67% 0);
-}
-
-.brand-intro-fragment-middle {
-  clip-path: inset(33% 68% 34% 0);
-}
-
-.brand-intro-fragment-bottom {
-  clip-path: inset(66% 68% 0 0);
 }
 
 .brand-intro-master {
